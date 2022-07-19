@@ -7,8 +7,13 @@ class Meal
     @price = attributes[:price] # integer
   end
 
+  def build_row
+    [@id, @name, price]
+  end
+
   # Meal.headers
   def self.headers
     ['id', 'name', 'price']
   end
+
 end
